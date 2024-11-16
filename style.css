@@ -1,0 +1,122 @@
+
+/* Light and Dark Mode Variables */
+:root {
+--bg-color: #ffffff;
+--text-color: #333333;
+--card-bg-color: #f8f9fa;
+--primary-color: #0d6efd;
+}
+
+body.dark-mode {
+--bg-color: #121212;
+--text-color: #ffffff;
+--card-bg-color: #1e1e1e;
+--primary-color: #bb86fc;
+}
+
+body {
+background-color: var(--bg-color);
+color: var(--text-color);
+font-family: 'Roboto', sans-serif;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.weather-card {
+background-color: var(--card-bg-color);
+border-radius: 1rem;
+transition: background-color 0.3s ease;
+}
+
+.error-message {
+font-size: 1rem;
+font-weight: bold;
+}
+
+.input-group-text {
+background-color: var(--card-bg-color);
+color: var(--text-color);
+}
+
+.btn-primary {
+background-color: var(--primary-color);
+border: none;
+}
+
+.btn-primary:hover {
+background-color: darken(var(--primary-color), 10%);
+}
+
+
+
+.search-icon {
+  opacity: 0.75;
+}
+.search-input {
+  width: 90%;
+  text-decoration: none;
+  border: none;
+}
+input:focus {
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+.search {
+padding: 3px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+color: #000;
+}
+.error-message {
+display: none;
+}
+.date-time-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date-time {
+padding: 15px 0px;
+font-weight: 400;
+font-size: 14px;
+}
+.city-country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.city, .country {
+font-size: 18px;
+font-weight: 700;
+}
+.weather-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.weather-status {
+margin: 25px 0px;
+} 
+.weather-image {
+width: 120px;
+height: 120px;
+}
+.weather-degree {
+font-size: 24px;
+}
+.weather-humidity-container, .weather-wind-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.humidity-image, .wind-image {
+width: 20px;
+height: 20px;
+}
+.weather-humidity, .humidity, .weather-wind, .wind {
+font-size: 12;
+font-weight: 100;
+}
